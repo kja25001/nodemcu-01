@@ -46,7 +46,7 @@ Här lägger man allt som ska hända upprepade gånger:
 - Köra logik, timers osv.
 
 **Exempel:**
-```cpp
+```c++
 void loop() {
   digitalWrite(LED_BUILTIN, HIGH);  // Tänd LED
   delay(1000);             // Vänta 1 sekund
@@ -60,7 +60,7 @@ Här blinkar LED:en eftersom `loop()` upprepar detta block hela tiden.
 
 Här är hela koden samlad i en sketchfil (`blink.ino`):
 
-```cpp
+```c++
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT); // Sätter den inbyggda LED:en som output
 }

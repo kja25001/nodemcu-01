@@ -72,10 +72,11 @@ För att komma igång med Blink-programmet följ de här stegen:
    Du kommer mötas med detta: *bild*
 2. **Gå till** `File` -> `Examples` -> `01.Basics` -> `Blink`
 
-   Nu borde ett **nytt fönster** med en **ny sketch** öppnas och se ut så här:
-   BILD
-3. Allt är nu egentligen färdigskrivet och **redo att köras** 😌
-4. Det du kan göra nu är att ändra `delay()` om du vill att LED ska blinka snabbare eller långsammare.
+   Nu borde ett **nytt fönster** med en **ny sketch** (Blink.ino) öppnas och se ut så här:
+
+    ![Blink.ino](bilder/Bild 2025-12-03 kl. 23.22.jpeg)
+4. Allt är nu egentligen färdigskrivet och **redo att köras** 😌
+5. Det du kan göra nu är att ändra `delay()` om du vill att LED ska blinka snabbare eller långsammare.
 
    ⬇️ I det här **exemplet** är den 2 sekunder tänd och 2 sekund släckt, alltså blinkar långsammare ⬇️
 

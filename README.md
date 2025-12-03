@@ -83,7 +83,7 @@ För att komma igång med Blink-programmet följ de här stegen:
 
 <img src="bilder/Blink.ino.jpeg" alt="Blink.ino" width="600"/>
 
-3. Allt är nu färdigskrivet och **redo att köras** 😌
+3. Eftersom allt redan är färdigskrivet och **redo att köras** behöver du endast ladda upp programmet med `Upload` 😌
 
 <img src="bilder/Upload.jpeg" alt="Upload" width="300"/>
 

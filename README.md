@@ -4,7 +4,7 @@ Den här guiden visar hur du som student kör ditt första **Blink-program** med
 
 🧠 **Du kommer att lära dig:**
 - Vad en mikrokontroller är
-- Basfuktionerna `setup()` och `loop()` i **Arduino IDE**
+- Basfunktionerna `setup()` och `loop()` i **Arduino IDE**
 - Hur du laddar upp ett program till din NodeMCU
 - Hur du får en LED (på din NodeMCU) att blinka
 
@@ -27,7 +27,7 @@ Den fungerar som en mini-dator som kör instruktioner i en loop, och används of
 ## ⚙️ Två basfunktioner i Arduino: `setup()` och `loop()`
 Alla Arduino-program består av två huvuddelar: `setup()` och `loop()`. Man kan säga att dessa gör basen i varje sketch.
 
-### 🟦 `setup()` – körs en gång
+### ▶️ `setup()` – körs en gång
 `setup()` körs endast en gång när programmet startar, t.ex. efter uppladdning eller när du trycker på reset.
 
 Här gör man alla initialiseringar, t.ex:
@@ -37,7 +37,7 @@ Här gör man alla initialiseringar, t.ex:
 - Initiera sensorer och bibliotek  
 
 **Exempel:**
-```cpp
+```c++
 void setup() {
   // lägg din installationskod här, för att köra en gång:
 
@@ -46,7 +46,7 @@ void setup() {
 
 Tänk på `setup()` som "startinställningar" innan programmet börjar rulla.
 
-### 🟩 loop() – körs om och om igen
+### 🔁 `loop()` – körs om och om igen
 
 `loop()` är huvudprogrammet. Efter att `setup()` körts startar `loop()` — och körs i en oändlig slinga så länge enheten är på.
 
@@ -75,16 +75,16 @@ För att komma igång med Blink-programmet följ de här stegen:
 
 ![Start](bilder/Start.jpeg)
 
-3. **Gå till** `File` -> `Examples` -> `01.Basics` -> `Blink`
+2. **Gå till** `File` -> `Examples` -> `01.Basics` -> `Blink`
 
 ![Välja Blink](bilder/Blink.jpeg)
 
    Nu borde ett **nytt fönster** med en **ny sketch** (Blink.ino) öppnas och se ut så här:
 
-![Blink.ino](bilder/Start.jpeg)
+![Blink.ino](bilder/Blink.ino.jpeg)
 
-4. Allt är nu egentligen färdigskrivet och **redo att köras** 😌
-5. Det du kan göra nu är att ändra `delay()` om du vill att LED ska blinka snabbare eller långsammare.
+3. Allt är nu färdigskrivet och **redo att köras** 😌
+4. Det du kan göra nu är att ändra `delay()` om du vill att LED ska blinka snabbare eller långsammare.
 
    ⬇️ I det här **exemplet** är den 2 sekunder tänd och 2 sekund släckt, alltså blinkar långsammare ⬇️
 

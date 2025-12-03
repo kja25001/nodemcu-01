@@ -1,11 +1,20 @@
 # nodemcu-01
 ## 📌 Översikt
-I detta projekt arbetar jag med NodeMCU (ESP8266) och Arduino IDE för att utföra grundläggande laborationer. Mitt mål är att förstå hur man programmerar en mikrocontroller, hur digitala portar fungerar och hur **setup()** och **loop()** bygger upp hela programstrukturen i Arduino.
+Den här guiden visar hur du som student kör ditt första **Blink-program** med **NodeMCU (ESP8266)** i Arduino IDE.
 
-Som exempel visar jag hur man gör ett enkelt **Blink-program**, det vill säga att tända och släcka en LED med jämna intervaller.
+🧠 **Du kommer att lära dig:**
+- Vad en mikrokontroller är
+- Basfuktionerna `setup()` och `loop()` i **Arduino IDE**
+- Hur du laddar upp ett program till din NodeMCU
+- Hur du får en LED (på din NodeMCU) att blinka
 
-## 🔧 Mikroprocessor (som används)
-Jag använder **NodeMCU med ESP8266-processorn**, som är en liten och billig mikrokontroller med:
+⚠️ **Denna guide förutsätter att:**
+- Arduino IDE redan är installerat
+- ESP8266-tillägget redan är tillagt
+- NodeMCU är korrekt inkopplad med USB-kabel
+
+## 🔧 Mikrokontroller (som används)
+Du kommer att använda dig av **NodeMCU med ESP8266-processorn**, som är en liten och billig mikrokontroller med:
 - Inbyggt WiFi
 - Flera digitala I/O-portar
 - Enkel programmering via USB
@@ -28,7 +37,8 @@ Här gör man alla initialiseringar, t.ex:
 **Exempel:**
 ```cpp
 void setup() {
-  pinMode(LED_BUILTIN, OUTPUT); /// Använder den inbyggda LED:en på NodeMCU
+  // lägg din installationskod här, för att köra en gång:
+
 }
 ```
 
@@ -48,17 +58,27 @@ Här lägger man allt som ska hända upprepade gånger:
 **Exempel:**
 ```c++
 void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);  // Tänd LED
-  delay(1000);             // Vänta 1 sekund
-  digitalWrite(LED_BUILTIN, LOW);   // Släck LED
-  delay(1000);             // Vänta 1 sekund
+  // skriv in din huvudkod här, för att köra den upprepade gånger:
 }
 ```
-Här blinkar LED:en eftersom `loop()` upprepar detta block hela tiden.
 
-## 💡 Blinkprogram – komplett exempel
 
-Här är hela koden samlad i en sketchfil (`blink.ino`):
+## 💡 Blink-programmet
+
+För att komma igång med Blink-programmet följ de här stegen:
+
+1. **Öppna upp** Arduino IDE och se till att allt är rätt inkopplat
+
+   Du kommer mötas med detta: *bild*
+2. **Gå till** `File` -> `Examples` -> `01.Basics` -> `Blink`
+
+   Nu borde ett **nytt fönster** med en **ny sketch** öppnas och se ut så här:
+   BILD
+3. Allt är nu egentligen färdigskrivet och **redo att köras** 😌
+4. Det du kan göra nu är att ändra `delay()` om du vill att LED ska blinka snabbare eller långsammare.
+
+   ⬇️ I det här **exemplet** är den 2 sekunder tänd och 2 sekund släckt, alltså blinkar långsammare ⬇️
+
 
 ```c++
 void setup() {
@@ -67,10 +87,8 @@ void setup() {
 
 void loop() {
   digitalWrite(LED_BUILTIN, HIGH); // Tänd LED
-  delay(1000);            // Vänta 1 sekund
+  delay(2000);            // Vänta 2 sekund
   digitalWrite(LED_BUILTIN, LOW);  // Släck LED
-  delay(1000);            // Vänta 1 sekund
+  delay(2000);            // Vänta 2 sekund
 }
 ```
-
-Du kan ändra `delay()` om du vill att LED ska blinka snabbare eller långsammare.

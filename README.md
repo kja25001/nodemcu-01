@@ -22,6 +22,8 @@ Du kommer att använda dig av **NodeMCU med ESP8266-processorn**, som är en lit
 
 Den fungerar som en mini-dator som kör instruktioner i en loop, och används ofta i IoT-projekt.
 
+![NodeMCU](bilder/NodeMCU.jpg)
+
 ## ⚙️ Två basfunktioner i Arduino: `setup()` och `loop()`
 Alla Arduino-program består av två huvuddelar: `setup()` och `loop()`. Man kan säga att dessa gör basen i varje sketch.
 
@@ -69,12 +71,18 @@ För att komma igång med Blink-programmet följ de här stegen:
 
 1. **Öppna upp** Arduino IDE och se till att allt är rätt inkopplat
 
-   Du kommer mötas med detta: *bild*
-2. **Gå till** `File` -> `Examples` -> `01.Basics` -> `Blink`
+   Du kommer mötas med detta:
+
+![Start](bilder/Start.jpeg)
+
+3. **Gå till** `File` -> `Examples` -> `01.Basics` -> `Blink`
+
+![Välja Blink](bilder/Blink.jpeg)
 
    Nu borde ett **nytt fönster** med en **ny sketch** (Blink.ino) öppnas och se ut så här:
 
-    ![Blink.ino](bilder/Bild 2025-12-03 kl. 23.22.jpeg)
+![Blink.ino](bilder/Start.jpeg)
+
 4. Allt är nu egentligen färdigskrivet och **redo att köras** 😌
 5. Det du kan göra nu är att ändra `delay()` om du vill att LED ska blinka snabbare eller långsammare.
 

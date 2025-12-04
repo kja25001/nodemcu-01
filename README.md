@@ -75,7 +75,7 @@ För att komma igång med Blink-programmet följ de här stegen:
 
 <img src="bilder/Start.jpeg" alt="Start" width="600"/>
 
-2. **Gå till** `File` -> `Examples` -> `01.Basics` -> `Blink`
+2. **Gå till** File -> Examples -> 01.Basics -> Blink
 
 <img src="bilder/Blink.jpeg" alt="Blink" width="600"/>
 
